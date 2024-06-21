@@ -1,10 +1,7 @@
-a = 1
-b = 5
-c = 10
-d = 6
-e = 9
-for n in range(5)
+a = 0
+s = int(input("รับค่า n:"))
 
-score = int(input("รับค่าคะแนน %d:" ))
-    print(a+b+c+d+e)
-
+for i in range(s):
+    y = int(input("รับค่า %d:" % (i+1)))
+    a = a + y
+print("รวมคือ %d" % a)

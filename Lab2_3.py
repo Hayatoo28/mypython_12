@@ -1,19 +1,14 @@
-print("โปรดกรอกคะเเนน")
-x = int(input("คะแนน : "))
-
-if x > 100:
-    print("กรุณากรอกข้อมูล 0-100")
-elif x < 0:
-    print("กรุณากรอกข้อมูล 0-100")
+Kg = int(input("Weight"))
+Cm = int(input("Hight"))
+bmi = Kg/(Cm/100)**2
+print(bmi)
+if bmi<18.5:
+    print("น้ำหนักน้อย")
+elif bmi>=18.50 and bmi<=22.90:
+    print("ปกติ")
+elif bmi>=23 and bmi<=24.90:
+    print("ท้วม/โรคอ้วนระดับ 1")
+elif bmi>=25 and bmi<=29.90:
+    print("อ้วน/โรคอ้วนระดับ 2")
 else:
-    if x >= 80:
-        print("เกรด A")
-    elif x >= 70:
-        print("เกรด B")
-    elif x >= 60:
-        print("เกรด C")
-    elif x >= 50:
-        print("เกรด D")
-    else:
-        print("เกรด F")
-    
+    print("อ้วนมาก/โรคอ้วนระดับ 3")
